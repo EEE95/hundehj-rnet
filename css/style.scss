@@ -7,6 +7,36 @@ body{
     background-color: partial.$bg-color;
 }
 
+h1{
+    font-family: partial.$header-font;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h2{
+    font-family: partial.$header2-font;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3{
+    font-family: partial.$header2-font;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h4{
+    font-family: partial.$header-font;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+p{
+    font-family: partial.$font;
+    font-weight: 200;
+    font-size: 16px;
+}
+
 /*Navigation*/
 .nav-desktop{
     display: none;
@@ -87,6 +117,24 @@ body{
 /*Mediaquerys*/
 
 @media screen and (min-width: 900px){
+
+    h1{
+        font-family: partial.$header-font;
+        font-weight: 600;
+        font-size: 128px;
+    }
+    
+    h2{
+        font-family: partial.$header2-font;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    
+    p{
+        font-family: partial.$font;
+        font-weight: 200;
+        font-size: 20px;
+    }
 
 .nav-desktop{
     display: flex;
