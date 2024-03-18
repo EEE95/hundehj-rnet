@@ -1,0 +1,121 @@
+@use "partial";
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: partial.$bg-color;
+}
+
+/*Navigation*/
+.nav-desktop{
+    display: none;
+}
+
+.nav-mobil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: partial.$forside-color;
+    padding: 10px;
+
+        img{
+            width: 50px;
+        }
+        
+        .dropbtn img{
+            width: 30px;
+        }
+
+    /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+  
+     /* Dropdown "knap" */
+        .dropbtn {
+        background-color: partial.$forside-color;
+        border: none;
+        cursor: pointer;
+        }
+  
+    /* Dropdown indhold*/
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: partial.$bg-color;
+            min-width: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: -50px;
+
+                a{
+                    color: partial.$font-color;
+                    font-family: partial.$header-font;
+                    font-weight: 600;
+                    padding: 12px 10px;
+                    text-decoration: none;
+                    display: block;
+
+                        &:hover{
+                            background-color: partial.$box-color;
+                            border: partial.$font-color solid 1px;
+                        }
+                }
+        }
+  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+  
+}
+
+
+
+
+/*Footer*/
+/*****mobil-version*****/
+
+
+
+
+/*****desktop-version*****/
+
+
+
+/*Mediaquerys*/
+
+@media screen and (min-width: 900px){
+
+.nav-desktop{
+    display: flex;
+    background-color: partial.$forside-color;
+    padding: 10px;
+
+        img{
+            width: 100px;
+        }
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 300px;
+            align-items: center;
+            list-style-type: none;
+
+                a{
+                    font-family: partial.$header-font;
+                    font-weight: 600;
+                    color: partial.$font-color;
+                    text-decoration: none;
+                }
+        }
+}
+
+.nav-mobil{
+    display: none;
+}
+
+}
