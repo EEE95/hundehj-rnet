@@ -1,0 +1,339 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:#F4F1ED;
+}
+
+h1{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h2{
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3{
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h4{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+p{
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/*Navigation*/
+.nav-desktop{
+    display: none;
+}
+
+.nav-mobil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8ac567;
+    padding: 10px;
+
+        img{
+            width: 50px;
+        }
+        
+        .dropbtn img{
+            width: 30px;
+        }
+
+    /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+  
+     /* Dropdown "knap" */
+        .dropbtn {
+        background-color: #8AC567;
+        border: none;
+        cursor: pointer;
+        }
+  
+    /* Dropdown indhold*/
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f4f1ed;
+            min-width: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: -50px;
+
+                a{
+                    color: black;
+                    font-family: "exo 2", sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    padding: 12px 10px;
+                    text-decoration: none;
+                    display: block;
+
+                        &:hover{
+                            background-color: #fff;
+                            border: black solid 1px;
+                        }
+                }
+        }
+  
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+  
+}
+
+
+
+
+/*Footer*/
+/*****mobil-version*****/
+.footer-desktop{
+    display: none;
+}
+
+.seperator{
+    border: solid black 1px;
+    width: 97%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-mobil{
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #8AC567;
+    
+    .paalinje{
+        display: flex;
+        gap: 15px;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: "Hind Guntur", sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+        color: black;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #F4F1ED;
+                border-radius: 5px;
+            }
+    }
+
+    .someikon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact a, .contact p{
+        padding-left: 45px;
+    }
+
+    .contact p{
+        line-height: 1;
+    }
+
+    .footer-logo img{
+        width: 150px;
+        float: right;
+    }
+
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+
+/*Mediaquerys*/
+
+@media screen and (min-width: 1000px){
+
+    h1{
+        font-family: "Exo 2", sans-serif;
+        font-weight: 600;
+        font-size: 128px;
+    }
+    
+    h2{
+        font-family: "montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    
+    p{
+        font-family: "Hind Guntur", sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+.nav-desktop{
+    display: flex;
+    background-color: #8AC567;
+    padding: 10px;
+
+        img{
+            width: 100px;
+        }
+
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 300px;
+            align-items: center;
+            list-style-type: none;
+
+                a{
+                    font-family: "Exo 2", sans-serif;
+                    font-weight: 800;
+                    font-size: 20px;
+                    color: black;
+                    text-decoration: none;
+                }
+        }   
+    }
+
+.nav-mobil{
+    display: none;
+}
+
+/*Footer*/
+.footer-mobil{
+    display: none;
+}
+
+.footer-desktop{
+    display: inline;
+}
+
+.seperator{
+    width: 100%;
+}
+
+.footergrid{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    width: 100%;
+    height: auto;
+    background-color: #8AC567;
+
+
+    .footernav{
+        display: flex;
+        flex-direction: column;
+        grid-column: 2/3;
+
+            .paalinje{
+                display: flex;
+                gap: 15px;
+            }
+
+            ul{
+                list-style-type: none;
+            }
+    
+            a{
+                text-decoration: none;
+                font-family: "Hind Guntur", sans-serif;
+                font-weight: 200;
+                font-size: 20px;
+                color: black;
+    
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #F4F1ED;
+                        border-radius: 5px;
+                    }
+            }
+    }
+
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        grid-column: 3/4;
+        justify-content: center;
+        align-items: center;
+    
+            img{
+                width: 200px;
+            }
+    } 
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        grid-column: 4/5;
+        align-items: flex-end;
+
+            a{
+                text-decoration: none;
+                font-family: "Hind Guntur", sans-serif;
+                font-weight: 200;
+                font-size: 20px;
+                color: black;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #F4F1ED;
+                        border-radius: 5px;
+                    }
+            }
+            
+            .someikon{
+                width: 30px;
+                height: 30px;
+            }
+
+
+            p{
+                line-height: 0;
+            }
+
+    }
+
+}
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+
+
+
+}
