@@ -111,6 +111,15 @@ p{
     display: none;
 }
 
+.footer-mobil{
+
+    .someikon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
 
 
 
@@ -163,8 +172,8 @@ p{
                     color: partial.$font-color;
                     text-decoration: none;
                 }
-        }
-}
+        }   
+    }
 
 .nav-mobil{
     display: none;
@@ -178,5 +187,8 @@ p{
 .someikon{
     width: 30px;
 }
+
+
+
 
 }
