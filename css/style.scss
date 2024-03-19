@@ -1,0 +1,142 @@
+@use "partial";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: partial.$header-font;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h2{
+    font-family: partial.$header2-font;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3{
+    font-family: partial.$header2-font;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h4{
+    font-family: partial.$header-font;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+p{
+    font-family: partial.$font;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.btn{
+    @include partial.btn;
+    @include partial.flex;
+    margin: 20px auto;
+    
+        &:hover{
+            background-image: url(../img/hover.png);
+        }
+}
+
+/*Hero-område*/
+
+
+/*Forside*/
+main{
+    margin: 10px 20px;
+
+        h1{
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+        }
+    
+        .forside-img{
+            width: 95%;
+            margin: 20px auto;
+
+        }
+
+        .spaceup{
+            padding-top: 20px;
+        }
+
+        .spacedown{
+            padding-bottom: 20px;
+        }
+
+        ol{
+            padding-left: 25px;
+        
+                li{
+                    font-family: partial.$font;
+                    font-weight: 200;
+                    padding-top: 10px;
+                }
+        }
+        
+        h2{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+        }
+
+        .box-btn{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 300px;
+            height: 115px;
+            margin: 0;
+            border: partial.$font-color solid 1px;
+            background-color: partial.$box-color;
+            margin-bottom: 20px;
+
+        
+            .box1{
+                grid-column: 1/2;
+            }
+
+            .box2{
+                grid-column: 2/3;
+            }
+
+            .box3{
+                display: flex;
+                flex-direction: column;
+                grid-column: 1/2;
+                margin: 0;
+                padding: 0;
+            }
+
+            a{
+                text-decoration: none;
+                color: partial.$font-color;
+                @include partial.flex;
+            }
+
+            img{
+                width: 160px;
+                height: 113px;
+            }
+
+        }
+
+        .tiltop{
+            float: right;
+            margin: 15px 0;
+
+            img{
+            width: 30px;
+            height: 15px;
+            }
+        }
+}
+

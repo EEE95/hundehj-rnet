@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*Variabler*/
+/*mixins*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #8AC567;
+  color: black;
+  font-weight: 600;
+  width: 190px;
+  height: 55px;
+  border-radius: 15px;
+  border: 1px solid black;
+  font-family: "Hind Guntur", sans-serif;
+  text-decoration: none;
+  box-shadow: 1px 7px 12px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.btn:hover {
+  background-image: url(../img/hover.png);
+}
+
+/*Hero-område*/
+/*Forside*/
+main {
+  margin: 10px 20px;
+}
+main h1 {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+main .forside-img {
+  width: 95%;
+  margin: 20px auto;
+}
+main .spaceup {
+  padding-top: 20px;
+}
+main .spacedown {
+  padding-bottom: 20px;
+}
+main ol {
+  padding-left: 25px;
+}
+main ol li {
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 200;
+  padding-top: 10px;
+}
+main h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+main .box-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 300px;
+  height: 115px;
+  margin: 0;
+  border: black solid 1px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+main .box-btn .box1 {
+  grid-column: 1/2;
+}
+main .box-btn .box2 {
+  grid-column: 2/3;
+}
+main .box-btn .box3 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/2;
+  margin: 0;
+  padding: 0;
+}
+main .box-btn a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box-btn img {
+  width: 160px;
+  height: 113px;
+}
+main .tiltop {
+  float: right;
+  margin: 15px 0;
+}
+main .tiltop img {
+  width: 30px;
+  height: 15px;
+}/*# sourceMappingURL=style.css.map */
