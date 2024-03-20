@@ -101,6 +101,13 @@ p {
 }
 
 /*Forside*/
+.margin {
+  margin: 0 20px;
+}
+
+main {
+  /*Knapper af overskrift + billede*/
+}
 main h1 {
   display: flex;
   justify-content: center;
@@ -109,6 +116,7 @@ main h1 {
 main .forside-img {
   width: 95%;
   margin: 20px auto;
+  border-radius: 15px;
 }
 main .spaceup {
   padding-top: 20px;
@@ -129,38 +137,42 @@ main h2 {
   justify-content: center;
   padding-bottom: 25px;
 }
-main .box-btn {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 300px;
-  height: 115px;
-  margin: 0;
-  border: black solid 1px;
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-main .box-btn .box1 {
-  grid-column: 1/2;
-}
-main .box-btn .box2 {
-  grid-column: 2/3;
-}
-main .box-btn .box3 {
+main .box-section {
   display: flex;
-  flex-direction: column;
-  grid-column: 1/2;
-  margin: 0;
-  padding: 0;
-}
-main .box-btn a {
-  text-decoration: none;
-  color: black;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+main .box-btn {
+  width: 300px;
+  height: 113px;
+  margin: 0 15px;
+  border: black solid 1px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .box-btn:hover {
+  background-image: url(../img/hover.png);
+}
+main .box-btn .text-align {
+  width: 150px;
+  height: 113px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+main .box-btn a {
+  text-decoration: none;
+  color: black;
+}
 main .box-btn img {
-  width: 160px;
+  width: 150px;
   height: 113px;
 }
 main .tiltop {
