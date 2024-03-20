@@ -242,3 +242,73 @@ main.kontakt{
         justify-content: left;
     }
 }
+
+/***Tips***/
+main.tips{
+
+    h2{
+        padding-top: 15px;
+        margin: 0 15px;
+        text-align: center;
+    }
+
+    p, ol{
+        margin:  0 15px;
+    }
+
+    /**Dropdown menu**/
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+        width: 95%;
+
+        .dropbtn{
+            width: 95%;
+            max-width: 410px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 7px 12px 0px rgba(0, 0, 0, 0.25);
+            font-family: partial.$font;
+            border-radius: 15px;
+            border: 1px solid partial.$font-color;
+            padding: 5px 15px 5px 15px;
+            background-color: partial.$forside-color;
+            font-weight: 500;
+        }
+
+        img{
+            width: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: partial.$box-color;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 15px;
+
+                a{
+                    color: partial.$font-color;
+                    font-family: partial.$font;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    font-weight: 600;
+
+                        &:hover{
+                            background-image: url(../img/hover.png);
+                            border-radius: 15px;
+                        }
+                }
+        }
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+}

@@ -223,4 +223,64 @@ main.kontakt h2 {
   padding-top: 15px;
   display: flex;
   justify-content: left;
+}
+
+/***Tips***/
+main.tips {
+  /**Dropdown menu**/
+}
+main.tips h2 {
+  padding-top: 15px;
+  margin: 0 15px;
+  text-align: center;
+}
+main.tips p, main.tips ol {
+  margin: 0 15px;
+}
+main.tips .dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  width: 95%;
+}
+main.tips .dropdown .dropbtn {
+  width: 95%;
+  max-width: 410px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 7px 12px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Hind Guntur", sans-serif;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 5px 15px 5px 15px;
+  background-color: #8AC567;
+  font-weight: 500;
+}
+main.tips .dropdown img {
+  width: 20px;
+}
+main.tips .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+}
+main.tips .dropdown .dropdown-content a {
+  color: black;
+  font-family: "Hind Guntur", sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+}
+main.tips .dropdown .dropdown-content a:hover {
+  background-image: url(../img/hover.png);
+  border-radius: 15px;
+}
+main.tips .dropdown:hover .dropdown-content {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
