@@ -70,7 +70,6 @@ p{
         h1{
             position: absolute;
             z-index: 2;
-
         }
 }
 
@@ -78,8 +77,8 @@ p{
 .brødkrumme{
     display: flex;
     gap: 4px;
-    margin: 10px;
     list-style-type: none;
+    font-size: 12px;
 
         li a{
             text-decoration: none;
@@ -92,6 +91,18 @@ p{
         }
 }
 
+/*maskot image*/
+.maskot-img{
+    width: 125px;
+}
+
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
 
 /*Forside*/
 .margin{
@@ -106,11 +117,13 @@ main{
             margin: 15px 0;
         }
     
-        .forside-img{
+        .primary-img{
             width: 95%;
             margin: 20px auto;
             border-radius: 15px;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .spaceup{
@@ -178,6 +191,8 @@ main{
             img{
                 width: 150px;
                 height: 113px;
+                border-top: 1px solid partial.$font-color;
+                border-bottom: 1px solid partial.$font-color;
             }
         }
 
@@ -192,3 +207,23 @@ main{
         }
 }
 
+
+/***om os***/
+
+main.om-os{
+
+    h2{
+        padding-top: 15px;
+        text-align: left;
+    }
+
+    p{
+        margin: 0 15px;
+    }
+
+    ul{
+        margin: 0 15px 0 35px;
+        font-family: partial.$font;
+    }
+    
+}

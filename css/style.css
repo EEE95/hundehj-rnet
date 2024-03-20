@@ -88,8 +88,8 @@ p {
 .brødkrumme {
   display: flex;
   gap: 4px;
-  margin: 10px;
   list-style-type: none;
+  font-size: 12px;
 }
 .brødkrumme li a {
   text-decoration: none;
@@ -98,6 +98,19 @@ p {
 }
 .brødkrumme li a:hover {
   font-weight: 600;
+}
+
+/*maskot image*/
+.maskot-img {
+  width: 125px;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
 }
 
 /*Forside*/
@@ -113,10 +126,13 @@ main h1 {
   justify-content: center;
   margin: 15px 0;
 }
-main .forside-img {
+main .primary-img {
   width: 95%;
   margin: 20px auto;
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .spaceup {
   padding-top: 20px;
@@ -174,6 +190,8 @@ main .box-btn a {
 main .box-btn img {
   width: 150px;
   height: 113px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 main .tiltop {
   float: right;
@@ -182,4 +200,17 @@ main .tiltop {
 main .tiltop img {
   width: 30px;
   height: 15px;
+}
+
+/***om os***/
+main.om-os h2 {
+  padding-top: 15px;
+  text-align: left;
+}
+main.om-os p {
+  margin: 0 15px;
+}
+main.om-os ul {
+  margin: 0 15px 0 35px;
+  font-family: "Hind Guntur", sans-serif;
 }/*# sourceMappingURL=style.css.map */
