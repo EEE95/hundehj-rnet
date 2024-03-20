@@ -213,4 +213,14 @@ main.om-os p {
 main.om-os ul {
   margin: 0 15px 0 35px;
   font-family: "Hind Guntur", sans-serif;
+}
+
+/***Kontakt***/
+main.kontakt h2, main.kontakt p {
+  margin-left: 15px;
+}
+main.kontakt h2 {
+  padding-top: 15px;
+  display: flex;
+  justify-content: left;
 }/*# sourceMappingURL=style.css.map */
