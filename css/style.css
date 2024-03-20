@@ -285,8 +285,8 @@ main.tips .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/***Træning***/
-main.treaning p {
+/***Træning - sundhed & ernæring - pleje***/
+main.ovrige p {
   margin: 0 15px;
 }
 
@@ -335,4 +335,13 @@ main.treaning p {
 }
 .cta-box .luft2 {
   margin-top: 43px;
+}
+.cta-box .luft3 {
+  margin-top: 50px;
+}
+.cta-box .luft4 {
+  margin-top: 77px;
+}
+.cta-box .luft5 {
+  margin-top: 110px;
 }/*# sourceMappingURL=style.css.map */
