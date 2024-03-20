@@ -287,7 +287,7 @@ main.tips{
             position: absolute;
             background-color: partial.$box-color;
             min-width: 120px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 1px 7px 12px 0px rgba(0, 0, 0, 0.25);
             z-index: 1;
             border-radius: 15px;
 
@@ -312,3 +312,67 @@ main.tips{
     }
 
 }
+
+/***Træning***/
+
+main.treaning{
+
+    p{
+        margin: 0 15px;
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px
+}
+
+.cta-box{
+    @include partial.cta-box;
+    margin-top: 90px;
+
+        img{
+            width: 250px;
+            height: 170px;
+            margin: auto;
+            border-radius: 15px;
+            display: block;
+            overflow: hidden;
+            transform: translateY(-35%);
+            box-shadow: 1px 7px 12px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        .maskot{
+            box-shadow: none;
+            width: auto;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        ul{
+            margin: 0 10px 0 30px;
+            font-family: partial.$font;
+            line-height: 1.5;
+        }
+
+        a{
+            text-align: center;
+            
+        }
+
+        .luft1{
+            margin-top: 92px;
+        }
+
+        .luft2{
+            margin-top: 43px;
+        }
+
+
+    }
+
