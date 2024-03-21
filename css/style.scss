@@ -46,7 +46,7 @@ p{
         }
 }
 
-/**********Hero-område**********/
+/**Hero-område**/
 .hero-section{
     margin: 0;
     padding: 0;
@@ -161,6 +161,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 2px solid partial.$font-color;
         }
 
         .spaceup{

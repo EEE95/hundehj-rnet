@@ -57,7 +57,7 @@ p {
   background-image: url(../img/hover.png);
 }
 
-/**********Hero-område**********/
+/**Hero-område**/
 .hero-section {
   margin: 0;
   padding: 0;
@@ -166,6 +166,7 @@ main .primary-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
 }
 main .spaceup {
   padding-top: 20px;
