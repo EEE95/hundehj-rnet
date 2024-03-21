@@ -113,7 +113,7 @@ p {
   margin: 25px 0;
 }
 
-/*Forside*/
+/******Forside*******/
 .margin {
   margin: 0 20px;
 }
@@ -121,12 +121,45 @@ p {
 main {
   /*Knapper af overskrift + billede*/
 }
-main h1 {
+main .hero-forside-desktop {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 15px 0;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
 }
-main .primary-img, main .primary-img-hero {
+main .hero-forside-desktop video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  opacity: 50%;
+}
+main .hero-forside-desktop .hero-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+main .hero-forside-desktop .hero-content h1 {
+  margin-bottom: 20px;
+}
+main .hero-forside-desktop .hero-content p {
+  margin-bottom: 20px;
+  max-width: 700px;
+  text-align: center;
+  font-weight: 500;
+}
+main .primary-img {
   width: 95%;
   margin: 20px auto;
   border-radius: 15px;
@@ -214,8 +247,11 @@ main.om-os p {
   margin: 0 15px;
 }
 main.om-os ul {
-  margin: 0 15px 0 35px;
+  margin-left: 35px;
   font-family: "Hind Guntur", sans-serif;
+}
+main.om-os .brødkrumme {
+  margin: 0;
 }
 
 /***Kontakt***/
@@ -357,11 +393,11 @@ main.ovrige p {
 }
 
 /*************----Desktop---************/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   h1 {
     font-family: "Exo 2", sans-serif;
     font-weight: 600;
-    font-size: 128px;
+    font-size: 90px;
   }
   p {
     font-family: "Hind Guntur", sans-serif;
@@ -377,45 +413,8 @@ main.ovrige p {
        object-position: center;
   }
   /*forsiden*/
-  .hero-forside-desktop {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .hero-forside-desktop img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-    border-radius: 0;
-    margin: 0;
-    z-index: 1;
-    opacity: 30%;
-  }
-  .hero-forside-desktop h1, .hero-forside-desktop p, .hero-forside-desktop a {
-    position: absolute;
-    z-index: 2;
-  }
-  .hero-forside-desktop h1 {
-    top: 5%;
-  }
-  .hero-forside-desktop p {
-    top: 45%;
-    width: 70%;
-  }
-  .hero-forside-desktop a {
-    top: 70%;
-  }
   .margin {
-    margin: 0 100px;
+    margin: 0 150px;
   }
   .primary-img {
     max-width: 1250px;
@@ -472,6 +471,13 @@ main.ovrige p {
     margin-top: 100px;
   }
   li {
+    font-size: 20px;
+  }
+  .dropdown .dropbtn {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .dropdown .dropdown-content a {
     font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
