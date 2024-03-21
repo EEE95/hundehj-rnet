@@ -227,6 +227,13 @@ main.kontakt h2 {
   display: flex;
   justify-content: left;
 }
+main.kontakt a {
+  text-decoration: none;
+  color: black;
+}
+main.kontakt a:hover {
+  font-weight: 600;
+}
 
 /***Tips***/
 main.tips {
